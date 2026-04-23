@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "python3 -m http.server 3000",
-    "build": "mkdir -p dist && cp index.html styles.css dist/"
+    "build": "mkdir -p dist/assets/images && cp index.html styles.css dist/ && cp assets/images/* dist/assets/images/"
   }
 }
