@@ -149,13 +149,15 @@ main,
   line-height: 0.95;
   font-weight: 900;
   color: #111;
+  letter-spacing: 0;
 }
 
 .hero h1 {
   margin: 8px 0 0;
   font-size: clamp(26px, 5vw, 42px);
-  line-height: 1.35;
+  line-height: 1.2;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .breadcrumb {
@@ -238,6 +240,7 @@ main,
   overflow: hidden;
   border: 1px solid #d7d7d7;
   background: #f4f5f6;
+  display: block;
 }
 
 .map-surface {
@@ -326,10 +329,18 @@ main,
 }
 
 .phone-line strong {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Times New Roman", Georgia, serif;
   font-size: clamp(44px, 9vw, 72px);
   line-height: 1;
   font-weight: 500;
+  display: inline-block;
+  transform: translateY(1px);
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+.phone-number-text {
+  white-space: nowrap;
 }
 
 .contact-panel small {
@@ -537,6 +548,11 @@ main,
   .section {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .hero h1 {
+    white-space: normal;
+    font-size: clamp(20px, 6vw, 28px);
   }
 
   .company-table div {
