@@ -300,22 +300,15 @@
               </article>
 
               <article class="overflow-hidden rounded-[2rem] border border-stroke bg-white shadow-card">
-                <!-- ここに画像を差し込む: map-image -->
-                <div
-                  id="map-image"
-                  class="placeholder-grid relative overflow-hidden bg-slate-100"
-                >
-                  <div class="aspect-[4/3] w-full bg-gradient-to-br from-white via-slate-100 to-slate-200"></div>
-                  <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center">
-                    <span class="rounded-full border border-stroke bg-white px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                      Map Image
-                    </span>
-                    <p class="text-sm leading-7 text-slate-500">
-                      地図や周辺案内画像を
-                      <br />
-                      あとから差し込めます
-                    </p>
-                  </div>
+                <div id="map-image" class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.9642168509295!2d135.49917297574365!3d34.68085257292672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71ea08703f7%3A0xc1a94d6b4ec556a9!2z5pel44Gu5pys5a-d5YW3!5e0!3m2!1sja!2sjp!4v1777033596836!5m2!1sja!2sjp"
+                    class="absolute inset-0 h-full w-full border-0"
+                    loading="lazy"
+                    allowfullscreen=""
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="日本寝具株式会社のGoogleマップ"
+                  ></iframe>
                 </div>
               </article>
             </div>
@@ -331,64 +324,42 @@
                 </h2>
               </div>
 
-              <div class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-                <div class="overflow-hidden rounded-[2rem] border border-stroke bg-white shadow-card">
-                  <dl class="divide-y divide-stroke">
-                    <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
-                      <dt class="text-sm font-bold text-slate-500">会社名</dt>
-                      <dd class="text-[0.98rem] leading-8 text-ink">日本寝具株式会社　大阪のオーダーメイド枕</dd>
-                    </div>
-                    <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
-                      <dt class="text-sm font-bold text-slate-500">住所</dt>
-                      <dd class="text-[0.98rem] leading-8 text-ink">〒541-0056 大阪府大阪市中央区久太郎町3-4-17</dd>
-                    </div>
-                    <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
-                      <dt class="text-sm font-bold text-slate-500">TEL / FAX</dt>
-                      <dd class="text-[0.98rem] leading-8 text-ink">TEL 06-6251-1603 / FAX 06-6251-2519</dd>
-                    </div>
-                    <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
-                      <dt class="text-sm font-bold text-slate-500">会社設立 / 資本金</dt>
-                      <dd class="text-[0.98rem] leading-8 text-ink">昭和23年 / 1,000万円</dd>
-                    </div>
-                    <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
-                      <dt class="text-sm font-bold text-slate-500">販売業種</dt>
-                      <dd class="text-[0.98rem] leading-8 text-ink">寝装・寝具 卸売業・小売業</dd>
-                    </div>
-                    <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
-                      <dt class="text-sm font-bold text-slate-500">事業内容</dt>
-                      <dd class="text-[0.98rem] leading-8 text-ink">
-                        大阪・船場にて、心地よい眠りのための寝具の販売を行っております。店舗販売、インターネット販売、法人向け販売を展開しています。
-                      </dd>
-                    </div>
-                    <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
-                      <dt class="text-sm font-bold text-slate-500">公式サイト</dt>
-                      <dd class="space-y-2 text-[0.98rem] leading-8 text-ink">
-                        <a class="block break-all text-navy underline decoration-stroke underline-offset-4" href="https://www.senba-futon.com/" target="_blank" rel="noreferrer">https://www.senba-futon.com/</a>
-                        <a class="block break-all text-navy underline decoration-stroke underline-offset-4" href="https://www.bimin.jp/" target="_blank" rel="noreferrer">https://www.bimin.jp/</a>
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-
-                <div class="overflow-hidden rounded-[2rem] border border-stroke bg-white shadow-card">
-                  <!-- ここに画像を差し込む: company-image -->
-                  <div
-                    id="company-image"
-                    class="placeholder-grid relative overflow-hidden bg-slate-100"
-                  >
-                    <div class="aspect-[4/5] w-full bg-gradient-to-br from-white via-slate-100 to-slate-200 lg:aspect-[3/4]"></div>
-                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center">
-                      <span class="rounded-full border border-stroke bg-white px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                        Company Image
-                      </span>
-                      <p class="text-sm leading-7 text-slate-500">
-                        外観写真や店舗写真を
-                        <br />
-                        あとから差し込めます
-                      </p>
-                    </div>
+              <div class="overflow-hidden rounded-[2rem] border border-stroke bg-white shadow-card">
+                <dl class="divide-y divide-stroke">
+                  <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
+                    <dt class="text-sm font-bold text-slate-500">会社名</dt>
+                    <dd class="text-[0.98rem] leading-8 text-ink">日本寝具株式会社　大阪のオーダーメイド枕</dd>
                   </div>
-                </div>
+                  <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
+                    <dt class="text-sm font-bold text-slate-500">住所</dt>
+                    <dd class="text-[0.98rem] leading-8 text-ink">〒541-0056 大阪府大阪市中央区久太郎町3-4-17</dd>
+                  </div>
+                  <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
+                    <dt class="text-sm font-bold text-slate-500">TEL / FAX</dt>
+                    <dd class="text-[0.98rem] leading-8 text-ink">TEL 06-6251-1603 / FAX 06-6251-2519</dd>
+                  </div>
+                  <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
+                    <dt class="text-sm font-bold text-slate-500">会社設立 / 資本金</dt>
+                    <dd class="text-[0.98rem] leading-8 text-ink">昭和23年 / 1,000万円</dd>
+                  </div>
+                  <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
+                    <dt class="text-sm font-bold text-slate-500">販売業種</dt>
+                    <dd class="text-[0.98rem] leading-8 text-ink">寝装・寝具 卸売業・小売業</dd>
+                  </div>
+                  <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
+                    <dt class="text-sm font-bold text-slate-500">事業内容</dt>
+                    <dd class="text-[0.98rem] leading-8 text-ink">
+                      大阪・船場にて、心地よい眠りのための寝具の販売を行っております。店舗販売、インターネット販売、法人向け販売を展開しています。
+                    </dd>
+                  </div>
+                  <div class="grid gap-2 px-5 py-5 sm:grid-cols-[11rem_1fr] sm:px-7">
+                    <dt class="text-sm font-bold text-slate-500">公式サイト</dt>
+                    <dd class="space-y-2 text-[0.98rem] leading-8 text-ink">
+                      <a class="block break-all text-navy underline decoration-stroke underline-offset-4" href="https://www.senba-futon.com/" target="_blank" rel="noreferrer">https://www.senba-futon.com/</a>
+                      <a class="block break-all text-navy underline decoration-stroke underline-offset-4" href="https://www.bimin.jp/" target="_blank" rel="noreferrer">https://www.bimin.jp/</a>
+                    </dd>
+                  </div>
+                </dl>
               </div>
             </div>
           </section>
